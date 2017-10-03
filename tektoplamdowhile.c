@@ -1,19 +1,18 @@
 #include<stdio.h>
-int main()
-{
-	int toplam=0;
-	int i=1;
 
-	do
-	{
-		if(i%2 == 0)
+int main() {
+	int toplam = 0;
+	int i = 0;
+
+	while (i < 100) {
+		/* code */
+		if (i % 2 == 0) {
+			i++;
+			continue;
+		}
+		toplam += i;
 		i++;
-		continue;
-
-	toplam=toplam+i;
-	i++;
 	}
-	while(i <= 100);
-	printf("1 ile 100 arasindaki tek sayilarin toplami:%d",toplam);
+	printf("1 ile 100 arasindaki tek sayilarin toplami:%d\n",toplam);
 	return 0;
 }
